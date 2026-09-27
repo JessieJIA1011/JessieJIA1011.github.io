@@ -1,0 +1,81 @@
+:root{--ink:#22313a;--blue:#206394;--accent:#00818a;--muted:#65747d;--line:#dfe6eb}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font:17px/1.8 "Optima","Candara","Segoe UI",sans-serif;border-top:4px solid var(--accent)}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.sidebar{position:fixed;top:4px;bottom:0;left:0;width:285px;background:#edf3f6;padding:44px 30px 28px;text-align:center;overflow-y:auto;border-right:1px solid var(--line)}.sidebar img{display:block;width:154px;height:184px;object-fit:cover;object-position:center 25%;border-radius:4px;margin:0 auto 23px}.name{font:600 32px/1.3 Georgia,serif;margin:0 0 16px}.name span{font:14px "Optima","Segoe UI",sans-serif;margin-left:9px;color:var(--muted)}.position{font-size:16px;line-height:1.55;margin-bottom:14px}.institution{font-weight:600;font-size:18px;line-height:1.5;margin-bottom:12px}.department{font-size:14px;line-height:1.65;color:var(--muted);margin-bottom:23px}.sidebar-links a{display:block;font-size:15px;margin:7px 0}.topics{margin:30px auto 0;padding-top:22px;border-top:1px solid #cad8e1;font-size:12px;line-height:1.9;letter-spacing:1.2px;text-transform:uppercase;color:#5a7484}.main-column{margin-left:285px;padding:0 56px;max-width:1370px}nav{display:flex;flex-wrap:wrap;gap:0;padding:31px 0 26px;border-bottom:1px solid var(--line)}nav a{font-weight:600;font-size:18px;color:var(--ink)}nav a:not(:last-child):after{content:"/";color:var(--accent);display:inline-block;margin:0 20px;font-weight:400}nav a[aria-current]{color:var(--blue)}main{padding-top:31px;max-width:960px;min-height:70vh}h1{font:600 34px/1.35 Georgia,serif;margin:0 0 23px;letter-spacing:-.5px}h2{font:600 26px/1.4 Georgia,serif;margin:0 0 20px;letter-spacing:-.3px}h3{font-size:19px;margin:23px 0 10px}p{margin:0 0 21px}.lead{font-size:20px;line-height:1.75}.profile-links{display:flex;gap:18px;margin:29px 0 0;font-weight:600}.profile-links span{color:#b1bcc5}section{margin-top:38px;padding-top:29px;border-top:1px solid var(--line)}.interests{padding-left:22px}.interests li{padding:3px 0}.record{display:grid;grid-template-columns:133px 1fr;gap:16px;margin:0 0 21px}.record>span{font-size:14px;color:var(--muted);padding-top:3px}.record small{font-size:14px;color:var(--muted)}strong{font-weight:650}.summary{background:#edf3f6;padding:12px 18px;font-size:16px}.summary span{color:#8596a1;margin:0 10px}.muted,.note{color:var(--muted);font-size:14px}.note{margin-bottom:0}.publications{padding-left:26px}.publications li{padding-left:7px;margin-bottom:23px;line-height:1.85}.publications li::marker{color:var(--muted);font-size:14px}.doi{white-space:nowrap;font-size:14px}.related{font-size:15px;background:#f5f8fa;border-left:2px solid #9abccc;padding:12px 16px}footer{margin-top:55px;border-top:1px solid var(--line);padding:20px 0 28px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}.skip{position:absolute;left:15px;top:-100px;background:white;padding:10px;z-index:3}.skip:focus{top:10px}@media(min-width:1500px){.main-column{padding-left:75px;padding-right:75px}.sidebar{width:305px}.main-column{margin-left:305px}}@media(max-width:1000px){.sidebar{width:235px;padding:30px 20px}.main-column{margin-left:235px;padding:0 30px}nav a:not(:last-child):after{margin:0 12px}.record{grid-template-columns:115px 1fr}}@media(max-width:720px){body{font-size:16px}.sidebar{position:static;width:100%;padding:25px 20px;text-align:left;display:grid;grid-template-columns:100px 1fr;column-gap:22px;border-right:0;border-bottom:1px solid var(--line)}.sidebar>a{grid-column:1;grid-row:1/6}.sidebar img{width:100px;height:130px;margin:0}.sidebar .name{grid-column:2;font-size:27px;margin:0 0 5px}.position{grid-column:2;font-size:14px;margin:0 0 5px}.institution{grid-column:2;font-size:15px;margin:0 0 9px}.department{display:none}.sidebar-links{grid-column:2}.sidebar-links a{font-size:14px;margin:2px 0}.topics{display:none}.main-column{margin:0;padding:0 22px}nav{padding:20px 0;row-gap:8px}nav a{font-size:16px}nav a:not(:last-child):after{margin:0 11px}main{padding-top:26px}h1{font-size:30px}h2{font-size:24px}.lead{font-size:18px}section{margin-top:28px;padding-top:24px}.record{grid-template-columns:1fr;gap:3px;margin-bottom:24px}.summary{font-size:14px}.summary span{margin:0 4px}.publications{padding-left:22px}.publications li{padding-left:4px;overflow-wrap:anywhere}footer{flex-wrap:wrap;gap:2px;margin-top:35px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.sidebar{position:static;width:100%;border:0}.sidebar img,.topics,nav,.skip{display:none}.main-column{margin:0;padding:0}body{border:0}a{color:inherit}.publications li{break-inside:avoid}}
+
+/* v3: research emphasis and a single-line affiliation */
+.plain-emphasis{font-weight:inherit}.institution{white-space:nowrap;font-size:16px;font-weight:400}.record strong{font-weight:inherit}
+@media(min-width:721px) and (max-width:1000px){.sidebar{width:275px}.main-column{margin-left:275px}}
+@media(max-width:720px){.institution{font-size:14px}.sidebar{grid-template-columns:80px 1fr;column-gap:16px;padding-left:16px;padding-right:16px}.sidebar img{width:80px;height:108px}}
+@media(max-width:360px){.sidebar{grid-template-columns:1fr;text-align:center}.sidebar>a{grid-column:1;grid-row:auto;margin:0 auto 15px}.sidebar .name,.position,.institution,.sidebar-links{grid-column:1}}
+
+/* v4: Arial throughout; flush-left content and compact top spacing. */
+body,h1,h2,h3,.name,.name span{font-family:Arial,Helvetica,sans-serif}.institution{font-weight:700;font-size:15px}.main-column{padding-left:28px;padding-right:28px;max-width:none}main{max-width:none;padding-top:22px;text-align:left}nav{padding-top:20px;padding-bottom:20px}.sidebar{width:305px;padding-left:20px;padding-right:20px}.main-column{margin-left:305px}.sidebar-links a{font-size:14px}h1{font-size:32px}h2{font-size:25px}.publications{padding-left:22px}
+@media(min-width:1500px){.main-column{padding-left:28px;padding-right:28px}}
+@media(max-width:1000px) and (min-width:721px){.sidebar{width:280px}.main-column{margin-left:280px}}
+@media(max-width:720px){.sidebar{width:100%;padding-left:16px;padding-right:16px}.main-column{margin-left:0;padding-left:20px;padding-right:20px}.institution{font-size:13px}main{padding-top:20px}nav a{font-size:15px}nav a:not(:last-child):after{margin:0 9px}}
+
+/* News uses uncropped user-supplied photographs. */
+.news-event{margin-top:24px;padding-bottom:30px}.news-event+.news-event{border-top:1px solid var(--line);padding-top:28px}.news-event h3{margin:7px 0 12px;font-size:21px}.news-date{font-size:14px;color:var(--muted);margin:0}.news-gallery{display:grid;gap:20px;margin-top:20px;align-items:start}.news-gallery figure{margin:0;min-width:0}.news-gallery a{display:block}.news-gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}.news-gallery figcaption{font-size:13px;line-height:1.6;color:var(--muted);margin-top:8px}.news-single{max-width:760px}.news-nbs{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);max-width:960px}.news-wide{grid-column:1/-1}.news-event:last-child{padding-bottom:0}@media(max-width:720px){.news-nbs{grid-template-columns:1fr 1.3fr;gap:14px}.news-event h3{font-size:19px}.news-gallery figcaption{font-size:12px}}@media(max-width:420px){.news-nbs{grid-template-columns:1fr}.news-wide{grid-column:auto}.news-nbs figure:nth-child(2){max-width:240px}.news-gallery{gap:22px}}
+
+/* v6: smaller, consistent text scale. */
+body{font-size:15px;line-height:1.75}h1{font-size:28px}h2{font-size:22px}h3,.news-event h3{font-size:18px}.lead{font-size:16px}nav a{font-size:16px}.name{font-size:29px}.position{font-size:15px}p{margin-bottom:18px}@media(max-width:720px){body{font-size:15px}h1{font-size:26px}h2{font-size:21px}.lead{font-size:16px}.news-event h3{font-size:18px}}
+
+/* v7: profile links and a regular square news gallery. */
+.profile-links{flex-wrap:wrap;align-items:center;gap:8px 15px;font-size:14px}.news-nbs{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:960px}.news-nbs .news-wide{grid-column:auto}.news-nbs figure:nth-child(2){max-width:none}.news-nbs a{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#f3f6f8;border:1px solid var(--line)}.news-nbs img{width:100%;height:100%;object-fit:contain;border:0}.news-nbs figcaption{font-size:12px}@media(max-width:600px){.news-nbs{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.profile-links{gap:7px 10px}}@media(max-width:360px){.news-nbs{grid-template-columns:1fr}}
+/* v8: panoramic first image; equal-height programme and session images. */
+.news-nbs{grid-template-columns:minmax(0,1fr) minmax(0,1.867fr);gap:20px}.news-nbs .news-wide{grid-column:1/-1}.news-nbs a{aspect-ratio:auto;display:block;border:0;background:transparent}.news-nbs img{width:100%;height:auto;object-fit:contain;border:1px solid var(--line)}.news-nbs figure:not(.news-wide) a{height:clamp(260px,43vw,600px);background:#f3f6f8}.news-nbs figure:not(.news-wide) img{height:100%;width:100%;object-fit:contain}.news-nbs figure:nth-child(2){max-width:none}@media(max-width:600px){.news-nbs{grid-template-columns:minmax(0,1fr) minmax(0,1.867fr);gap:12px}.news-nbs figure:not(.news-wide) a{height:clamp(200px,65vw,360px)}}
+
+/* v9: compact teaching photographs preserve the supplied resolution. */
+.teaching-visits article+article{margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}.visit-date{color:var(--muted);font-size:14px}.teaching-visits figure{margin:18px 0 0}.teaching-visits img{display:block;max-width:100%;height:auto}.teaching-visits figcaption{font-size:12px;color:var(--muted);line-height:1.6;margin-top:8px}.visit-tokyo{max-width:308px}.visit-maipo{display:grid;grid-template-columns:minmax(0,264px) minmax(0,180px);gap:24px;align-items:start;max-width:468px}.visit-maipo figure:nth-child(2) img{width:144px}@media(max-width:420px){.visit-maipo{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}}
+
+/* v10: compact spacing, scoped to Publications. */
+.publications-page main>h1{margin-bottom:12px}.publications-page main>p{margin-bottom:10px}.publications-page main>section{margin-top:24px;padding-top:20px}.publications-page main>section>h2{margin-bottom:12px}.publications-page .publications{margin-top:0;margin-bottom:0}.publications-page .publications li{margin-bottom:10px;line-height:1.6}.publications-page .publications li:last-child{margin-bottom:0}
+
+/* Citation snapshot: provenance and date remain visible. */
+.citation-metrics{display:flex;gap:32px;margin:14px 0 8px}.citation-metrics>div{display:flex;align-items:baseline;gap:9px}.metric-value{font-size:25px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}.metric-label{font-size:14px;color:var(--muted)}.metrics-source{font-size:12px;color:var(--muted)}@media(max-width:380px){.citation-metrics{gap:22px}.citation-metrics>div{gap:7px}.metric-value{font-size:23px}}
+
+/* v12: full-resolution teaching photographs. */
+.teaching-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:900px;align-items:start}.teaching-gallery figure{min-width:0;margin-top:14px}.teaching-gallery a{display:flex;height:400px;align-items:center;justify-content:center;background:#f3f6f8}.teaching-gallery img{width:100%;height:100%;object-fit:contain}.maipo-gallery{max-width:700px}.maipo-gallery a{height:440px}@media(max-width:720px){.teaching-gallery{gap:16px}.teaching-gallery a{height:280px}.maipo-gallery a{height:300px}}@media(max-width:480px){.teaching-gallery{grid-template-columns:1fr;max-width:400px}.teaching-gallery a,.maipo-gallery a{height:auto}.teaching-gallery img{height:auto}}
+
+/* v13: journal cover alongside acceptance notification. */
+.acceptance-gallery{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:24px;max-width:960px;align-items:center}.acceptance-gallery figure{margin:0;min-width:0}.acceptance-gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}.acceptance-gallery figcaption{font-size:12px;color:var(--muted);margin-top:8px}@media(max-width:600px){.acceptance-gallery{grid-template-columns:1fr;gap:20px}.acceptance-gallery figure:first-child{max-width:180px}}
+
+/* v14: journal cover and manuscript figures. */
+.proof-gallery{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:24px;max-width:900px;align-items:start}.proof-gallery figure{margin:0;min-width:0}.proof-gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}.proof-gallery figure:nth-child(2){max-width:480px}.proof-gallery .proof-wide{grid-column:1/-1}.proof-gallery figcaption{font-size:12px;color:var(--muted);margin-top:8px}@media(max-width:600px){.proof-gallery{grid-template-columns:1fr}.proof-gallery .proof-cover{max-width:180px}.proof-gallery .proof-wide{grid-column:auto}}
+
+/* v18: one small image on the left, consistent news rows and spacing. */
+.news .news-event{display:grid;grid-template-columns:150px minmax(0,1fr);gap:26px;align-items:start;min-height:240px;margin:0;padding:24px 0;border-top:1px solid var(--line)}
+.news .news-event:first-of-type{border-top:0}
+.news .news-event:last-child{padding-bottom:24px}
+.news-thumbnail{display:flex;width:150px;height:192px;align-items:flex-start;justify-content:center}
+.news-thumbnail img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border:1px solid var(--line);border-radius:3px}
+.news-copy{min-width:0}.news-copy h3{margin:4px 0 9px}.news-copy p{margin-bottom:10px}.news-copy p:last-child{margin-bottom:0}
+@media(max-width:600px){.news .news-event{grid-template-columns:90px minmax(0,1fr);gap:16px;min-height:176px;padding:22px 0}.news-thumbnail{width:90px;height:128px}.news-copy h3{font-size:16px}}
+
+/* v23: Tokyo panorama above two uncropped, equal-height photographs. */
+.teaching-gallery.tokyo-gallery{grid-template-columns:minmax(0,1244fr) minmax(0,1438fr);max-width:900px;gap:24px}
+.tokyo-gallery figure{margin:0;min-width:0}
+.tokyo-gallery figure:first-child{grid-column:1/-1}
+.tokyo-gallery a{height:auto;background:transparent}
+.tokyo-gallery figure:first-child img{width:100%;height:auto}
+.tokyo-gallery figure:nth-child(2) a{aspect-ratio:1080/1438}
+.tokyo-gallery figure:nth-child(3) a{aspect-ratio:1080/1244}
+.tokyo-gallery figure:not(:first-child) img{width:100%;height:100%;object-fit:contain}
+@media(max-width:720px){.teaching-gallery.tokyo-gallery{gap:16px}}
+
+/* v26: aligned rectangular Tokyo photo montage, captions below the block. */
+.teaching-visits .tokyo-layout{max-width:700px;margin:18px 0 0}
+.tokyo-photos{display:grid;grid-template-columns:minmax(0,1244fr) minmax(0,1438fr);gap:12px;align-items:start}
+.tokyo-photos a{display:block;min-width:0;line-height:0}
+.tokyo-photos a:first-child{grid-column:1 / -1}
+.tokyo-photos img{display:block;width:100%;height:auto}
+.tokyo-layout figcaption{margin-top:10px}
+@media(max-width:600px){.tokyo-photos{gap:8px}}
+
+/* Match Mai Po gallery width on small screens as well. */
+@media(max-width:480px){.teaching-visits .tokyo-layout{max-width:400px}}
+
+/* v28: retain gallery width; inset photos within pale frames like Mai Po. */
+.tokyo-photos a{background:#f3f6f8;border:1px solid var(--line);padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tokyo-photos a:first-child{aspect-ratio:16/9}
+.tokyo-photos a:nth-child(2){aspect-ratio:1080/1438}
+.tokyo-photos a:nth-child(3){aspect-ratio:1080/1244}
+.tokyo-photos img{width:88%;height:88%;object-fit:contain}
