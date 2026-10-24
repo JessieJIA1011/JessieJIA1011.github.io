@@ -2,7 +2,7 @@
   const url = 'https://raw.githubusercontent.com/JessieJIA1011/JessieJIA1011.github.io/main/data/scholar.json';
   async function update() {
     try {
-      const response = await fetch(url, {cache: 'no-store'});
+      const response = await fetch(`${url}?refresh=${Math.floor(Date.now() / 60000)}`, {cache: 'no-store'});
       if (!response.ok) return;
       const data = await response.json();
       const date = new Date(data.updated_at);
@@ -12,6 +12,10 @@
           !Number.isFinite(date.getTime())) return;
       const values = document.querySelectorAll('.citation-metrics .metric-value');
       if (values.length !== 2) return;
+      const panel = document.querySelector('.citation-metrics');
+      const displayedAt = Date.parse(panel.dataset.updatedAt || '');
+      if (Number.isFinite(displayedAt) && date.getTime() < displayedAt) return;
+      panel.dataset.updatedAt = data.updated_at;
       values[0].textContent = data.citations.toLocaleString('en-US');
       values[1].textContent = String(data.h_index);
       document.querySelector('.citation-metrics').setAttribute('aria-label', 'Google Scholar citation metrics');
