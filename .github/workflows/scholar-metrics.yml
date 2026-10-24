@@ -1,7 +1,5 @@
-name: Daily Google Scholar metrics
+name: Manual Google Scholar metrics
 on:
-  schedule:
-    - cron: '23 1 * * *'
   workflow_dispatch:
   push:
     paths:
