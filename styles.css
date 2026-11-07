@@ -82,3 +82,6 @@ body{font-size:15px;line-height:1.75}h1{font-size:28px}h2{font-size:22px}h3,.new
 
 /* News archive navigation. */
 .news-more{margin:16px 0 0}.news-button{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border:1px solid var(--blue);border-radius:4px;font-weight:600}.news-button:hover{background:#edf3f6;text-decoration:none}
+
+/* Match the talk photo to the standard news thumbnail frame. */
+.news-talk-thumbnail img{width:100%;height:100%;object-fit:cover;object-position:center 65%}
